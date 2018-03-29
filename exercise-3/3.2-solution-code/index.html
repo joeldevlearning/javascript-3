@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FakeFLIX - CodeWith-Me</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.4.slate.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><span class="heavy">Fake</span>FLIX</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h2 class="search-title text-center">Search For Movies by Title</h2>
+            <form id="search-form">
+                <input type="text" class="form-control" id="search-form-input" placeholder="Search Movies...">
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul id="movies" class="movie-list">
+            <li>
+                <a onclick="loadMovieProfile('${movie.imdbID}')" href="#">
+                    <div class="movie-card">
+                        <img src="" alt="movie poster and movie title">
+                        <br>
+                        <span class="movie-card-title heavy">title</span>
+                        <br>
+                        <span class="movie-card-year">year</span>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <script type="text/javascript" src="js/omdb.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+
+</body>
+
+</html>
